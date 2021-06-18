@@ -1,0 +1,111 @@
+### POST docs
+
+POST /menu-tree-finder-v3/_doc
+{
+  "createdBy": "user_1",
+  "createdDate": 20201110,
+  "description": "Customer basic information entry",
+  "fullPath": "Customer-Basic Information Entry",
+  "screenId": "CUS1100",
+  "tag": "customer basic entry retail corporate",
+  "screenOid": 1100
+}
+
+POST /menu-tree-finder-v3/_doc
+{
+  "createdBy": "user_1",
+  "createdDate": 20201110,
+  "description": "Customer basic information update",
+  "fullPath": "Customer-Basic Information Update",
+  "screenId": "CUS1110",
+  "tag": "customer basic entry retail corporate",
+  "screenOid": 1110
+}
+
+POST /menu-tree-finder-v3/_doc
+{
+  "createdBy": "user_1",
+  "createdDate": 20201110,
+  "description": "Customer retail information entry",
+  "fullPath": "Customer-Retail Information Entry",
+  "screenId": "CUS1200",
+  "tag": "customer retail entry",
+  "screenOid": 1200
+}
+
+POST /menu-tree-finder-v3/_doc
+{
+  "createdBy": "user_1",
+  "createdDate": 20201110,
+  "description": "Customer retail information update",
+  "fullPath": "Customer-Retail Information Update",
+  "screenId": "CUS1200",
+  "tag": "customer retail update",
+  "screenOid": 1210
+}
+
+POST /menu-tree-finder-v3/_doc
+{
+  "createdBy": "user_1",
+  "createdDate": 20201110,
+  "description": "Customer corporate information entry",
+  "fullPath": "Customer-Corporate Information Entry",
+  "screenId": "CUS1300",
+  "tag": "customer corporate entry",
+  "screenOid": 1300
+}
+
+POST /menu-tree-finder-v3/_doc
+{
+  "createdBy": "user_1",
+  "createdDate": 20201110,
+  "description": "Customer corporate information update",
+  "fullPath": "Customer-Corporate Information Update",
+  "screenId": "CUS1310",
+  "tag": "customer corporate update",
+  "screenOid": 1310
+}
+
+POST /menu-tree-finder-v3/_doc
+{
+  "createdBy": "user_1",
+  "createdDate": 20201110,
+  "description": "Current account opening",
+  "fullPath": "Accounts-Currenct Account Opening",
+  "screenId": "CUS2100",
+  "tag": "currenct account opening retail corporate",
+  "screenOid": 2100
+}
+
+POST /menu-tree-finder-v3/_doc
+{
+  "createdBy": "user_1",
+  "createdDate": 20201110,
+  "description": "Current account transaction",
+  "fullPath": "Accounts-Currenct Account Transaction",
+  "screenId": "CUS2110",
+  "tag": "currenct account transaction observation retail corporate",
+  "screenOid": 2110
+}
+
+POST /menu-tree-finder-v3/_doc
+{
+  "createdBy": "user_1",
+  "createdDate": 20201110,
+  "description": "Term deposit account opening",
+  "fullPath": "Accounts-Term Deposit Account Opening",
+  "screenId": "CUS2100",
+  "tag": "term deposit account opening retail corporate",
+  "screenOid": 2200
+}
+
+POST /menu-tree-finder-v3/_doc
+{
+  "createdBy": "user_1",
+  "createdDate": 20201110,
+  "description": "Term deposit account transaction",
+  "fullPath": "Accounts-Term Deposit Account Transaction",
+  "screenId": "CUS2110",
+  "tag": "term deposit account transaction observation retail corporate",
+  "screenOid": 2210
+}

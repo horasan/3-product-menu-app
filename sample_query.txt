@@ -1,0 +1,31 @@
+##### queries
+GET menu-tree-finder-v3/_search?pretty
+{
+   "query": {
+        "match_all": {}
+    }
+}
+
+GET menu-tree-finder-v3/_search?pretty
+{
+  "query": {
+    "multi_match": {
+      "query": "cus cou mod",
+      "type": "bool_prefix",
+      "fields": [
+        "description.shingles",
+        "description.shingles._3gram",
+        "description.shingles._4gram",
+        "description.shingles._index_prefix",
+        "description.ngrams"
+      ]
+    }
+  },
+  "highlight" : {
+    "fields" : [
+      {
+        "description.ngrams": { } 
+      }
+    ]
+  }
+}

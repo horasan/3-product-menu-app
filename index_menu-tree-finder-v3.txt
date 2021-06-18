@@ -1,0 +1,87 @@
+## index
+PUT menu-tree-finder-v3
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "word-to-chars" : {
+          "type": "custom",
+          "tokenizer": "ngrams-3-4",
+          "filter": ["lowercase"]
+        }
+      },
+      "tokenizer": {
+        "ngrams-3-4": {
+          "type": "ngram",
+          "min_gram": 3,
+          "max_gram": 4
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "createdBy": {"type": "keyword"},
+      "createdDate": { "type": "integer"},
+      "description": {
+        "type": "text",
+        "fields": {
+          "shingles": { 
+            "type": "search_as_you_type"
+          },
+          "ngrams": {
+            "type": "text",
+            "analyzer": "word-to-chars",
+            "search_analyzer": "standard",
+            "term_vector": "with_positions_offsets"
+          }
+        }
+      },
+      "fullPath": {
+        "type": "text",
+        "fields": {
+          "shingles": { 
+            "type": "search_as_you_type"
+          },
+          "ngrams": {
+            "type": "text",
+            "analyzer": "word-to-chars",
+            "search_analyzer": "standard",
+            "term_vector": "with_positions_offsets"
+          }
+        }
+      },
+      "screenId": {
+        "type": "text",
+        "fields": {
+          "shingles": { 
+            "type": "search_as_you_type"
+          },
+          "ngrams": {
+            "type": "text",
+            "analyzer": "word-to-chars",
+            "search_analyzer": "standard",
+            "term_vector": "with_positions_offsets"
+          }
+        }
+      },
+      "tag": {
+        "type": "text",
+        "fields": {
+          "shingles": { 
+            "type": "search_as_you_type"
+          },
+          "ngrams": {
+            "type": "text",
+            "analyzer": "word-to-chars",
+            "search_analyzer": "standard",
+            "term_vector": "with_positions_offsets"
+          }
+        }
+      },
+      "screenOid": {
+       "type": "long"
+      }
+    }
+  }
+}
